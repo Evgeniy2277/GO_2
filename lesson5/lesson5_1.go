@@ -16,7 +16,7 @@ func main() {
 	)
 	//инициализируем семафор n
 	wg.Add(n)
-	fmt.Println(wg)
+	// fmt.Println(wg)
 	// запускаем в цикле n потоков
 	for i := 0; i < n; i += 1 {
 		go func() {
@@ -27,7 +27,7 @@ func main() {
 	}
 	// ждем в сеамфоре 0
 	wg.Wait()
-	fmt.Println(wg)
+	// fmt.Println(wg)
 
 	fmt.Println(counter)
 
